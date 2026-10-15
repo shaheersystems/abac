@@ -1,0 +1,23 @@
+{
+  "name": "abac",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run index.ts",
+    "dev": "bun --watch index.ts",
+    "seed": "bun run src/scripts/seed.ts",
+    "demo": "bun run src/scripts/demo.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "accesscontrol": "^3.1.0"
+  }
+}
